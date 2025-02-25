@@ -1,0 +1,172 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <!-- Header -->
+  <header class="flex items-center justify-between p-4 bg-black bg-opacity-75 fixed w-full z-10">
+   <div class="flex items-center space-x-4">
+    <img alt="Netflix logo with red background and white text" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/UAdKt77I9Bz1jQhEqd6T_p49qZx6AQCs1qMTf5qh-7Q.jpg" width="100"/>
+    <nav class="hidden md:flex space-x-4">
+     <a class="text-white hover:text-gray-400" href="#">
+      Home
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      TV Shows
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Movies
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      New &amp; Popular
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      My List
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-white">
+    </i>
+    <i class="fas fa-bell text-white">
+    </i>
+    <img alt="User profile icon with white background and black text" class="h-8 w-8 rounded-full" height="30" src="https://storage.googleapis.com/a1aa/image/aiuqwRP9FLSHqJMisJR9ROhUXONFq404WLUQM14WsBI.jpg" width="30"/>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative h-screen">
+   <img alt="Hero image with black background and white text" class="absolute inset-0 w-full h-full object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/H2Y-VhUz4nHdg06ok1jPbse2-ttgOn4ecck7MzAGnEs.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black">
+   </div>
+   <div class="relative z-10 p-8 md:p-16 lg:p-24">
+    <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">
+     Movie Title
+    </h1>
+    <p class="text-lg md:text-xl lg:text-2xl mb-8">
+     An exciting movie description goes here. Watch now!
+    </p>
+    <button class="bg-white text-black px-6 py-3 rounded-md text-lg font-semibold mr-4">
+     <i class="fas fa-play">
+     </i>
+     Play
+    </button>
+    <button class="bg-gray-700 bg-opacity-75 text-white px-6 py-3 rounded-md text-lg font-semibold">
+     <i class="fas fa-info-circle">
+     </i>
+     More Info
+    </button>
+   </div>
+  </section>
+  <!-- Content Section -->
+  <section class="p-8 md:p-16 lg:p-24 space-y-12">
+   <!-- Row 1 -->
+   <div>
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+     Trending Now
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie 1 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/wm7fjXlq_L1AnSRlZ65PemIgoN9tWfMt2uxFtMbsakg.jpg" width="300"/>
+     <img alt="Movie 2 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/fHZiHroaMqdbmaus_EGP37zO6oBWMpMfefPq-Xmil6U.jpg" width="300"/>
+     <img alt="Movie 3 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/aYB6ngr-b5dMvt9fpde5VENYuItrlQ-Cozj2pjOup7s.jpg" width="300"/>
+     <img alt="Movie 4 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/IWAUXnC3Rg0O9uERFLSOqDZu3nwwbkO8M-mI09xXDao.jpg" width="300"/>
+     <img alt="Movie 5 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/dtfNrd5u5U_uOih2zfNCShqjm-eIBFQN2OYeiN11QR0.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 2 -->
+   <div>
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+     Top Picks for You
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie 6 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/KbYqzz3I8xojj8Zh4a7-f-kdGy1oTjNXDxk396kWzo4.jpg" width="300"/>
+     <img alt="Movie 7 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/mmbrNQhvOiWHYC6k6r2ZkS8YJr3oNbgCUAqXfxoUOBM.jpg" width="300"/>
+     <img alt="Movie 8 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/4y6ERaw1wTYTf9UDUpzTdauc_G7IAK9SJaaHJDO41Mk.jpg" width="300"/>
+     <img alt="Movie 9 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/OHP8yBnXMe00l_xl_7iYXAe_Xom7wGICmAhW8E8lfIM.jpg" width="300"/>
+     <img alt="Movie 10 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/NOIwG_p4k4aeQRioS-HW-oowrm_I0rKKJlGdHMQ_ilk.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 3 -->
+   <div>
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+     New Releases
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie 11 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/OjOYjlbFjMlfxWF9mJ6xyRqZ27gCEGZyDrvw_mxsNzQ.jpg" width="300"/>
+     <img alt="Movie 12 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/9MWe_JTzOh7PdbCvzymQI9R-I_n9wOtSE-Kfw_HsGks.jpg" width="300"/>
+     <img alt="Movie 13 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/uTWhIRMIdTJhrcz0c73xEskHYENrmi7Kj4Mm0966Hi8.jpg" width="300"/>
+     <img alt="Movie 14 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/DhGNyQrvSqNeBXAompb4mkAKVSw86ytANgrj_pK9Kr0.jpg" width="300"/>
+     <img alt="Movie 15 thumbnail with black background and white text" class="w-48 md:w-64 lg:w-80 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/ABAIvEF3MPcV_hOkB0Kp5sJlWZMt3AW0oz4jiv5M-nM.jpg" width="300"/>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-75 p-8 md:p-16 lg:p-24">
+   <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <div class="flex space-x-4">
+     <a class="text-white hover:text-gray-400" href="#">
+      Audio and Subtitles
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Help Center
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Gift Cards
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Media Center
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Investor Relations
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Jobs
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Terms of Use
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Privacy
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Legal Notices
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Cookie Preferences
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Corporate Information
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Contact Us
+     </a>
+    </div>
+    <div class="text-white">
+     <i class="fab fa-facebook-f mx-2">
+     </i>
+     <i class="fab fa-instagram mx-2">
+     </i>
+     <i class="fab fa-twitter mx-2">
+     </i>
+     <i class="fab fa-youtube mx-2">
+     </i>
+    </div>
+   </div>
+   <div class="text-gray-400 text-sm mt-8">
+    © 2023 Netflix Clone. All rights reserved.
+   </div>
+  </footer>
+ </body>
+</html>
